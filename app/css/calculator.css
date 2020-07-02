@@ -1,0 +1,4 @@
+span.calculator-radio-block-label.checked {
+	border-color: rgb(82, 161, 179);
+	border-width: 2px;
+}

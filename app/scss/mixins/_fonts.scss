@@ -1,0 +1,70 @@
+/* @import must be at top of file, otherwise CSS will not work */
+/*   
+@font-face {font-family: 'HelveticaNeueLTStd-Bd';src: url('../fonts/Helvetica/3387D5_0_0.eot');src: url('../fonts/Helvetica/3387D5_0_0.eot?#iefix') format('embedded-opentype'),url('../fonts/Helvetica/3387D5_0_0.woff2') format('woff2'),url('../fonts/Helvetica/3387D5_0_0.woff') format('woff'),url('../fonts/Helvetica/3387D5_0_0.ttf') format('truetype');}
+*/
+
+@font-face {
+  font-family: 'Arsenal-Bold';
+  src: url('../fonts/Arsenal/Arsenal-Bold.eot') format('embedded-opentype'), url('../fonts/Arsenal/Arsenal-Bold.woff2') format('woff2'), url('../fonts/Arsenal/Arsenal-Bold.woff') format('woff'), url('../fonts/Arsenal/Arsenal-Bold.ttf') format('truetype');
+}
+
+@mixin Arsenal-Bold() {
+  font-family: Arsenal-Bold;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Arsenal-Regular';
+  src: url('../fonts/Arsenal/Arsenal-Regular.eot') format('embedded-opentype'), url('../fonts/Arsenal/Arsenal-Regular.woff2') format('woff2'), url('../fonts/Arsenal/Arsenal-Regular.woff') format('woff'), url('../fonts/Arsenal/Arsenal-Regular.ttf') format('truetype');
+}
+
+@mixin Arsenal-Regular() {
+  font-family: Arsenal-Regular;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Merriweather-Bold';
+  src: url('../fonts/Merriweather/Merriweather-Bold.eot') format('embedded-opentype'), url('../fonts/Merriweather/Merriweather-Bold.woff2') format('woff2'), url('../fonts/Merriweather/Merriweather-Bold.woff') format('woff'), url('../fonts/Merriweather/Merriweather-Bold.ttf') format('truetype');
+}
+
+@mixin Merriweather-Bold() {
+  font-family: Merriweather-Bold;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Merriweather-Regular';
+  src: url('../fonts/Merriweather/Merriweather-Regular.eot') format('embedded-opentype'), url('../fonts/Merriweather/Merriweather-Regular.woff2') format('woff2'), url('../fonts/Merriweather/Merriweather-Regular.woff') format('woff'), url('../fonts/Merriweather/Merriweather-Regular.ttf') format('truetype');
+}
+
+@mixin Merriweather-Regular() {
+  font-family: Merriweather-Regular;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSans-Bold';
+  src: url('../fonts/OpenSans/OpenSans-Bold.eot') format('embedded-opentype'), url('../fonts/OpenSans/OpenSans-Bold.woff2') format('woff2'), url('../fonts/OpenSans/OpenSans-Bold.woff') format('woff'), url('../fonts/OpenSans/OpenSans-Bold.ttf') format('truetype');
+}
+
+@mixin OpenSans-Bold() {
+  font-family: OpenSans-Bold;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSans-Regular';
+  src: url('../fonts/OpenSans/OpenSans-Regular.eot') format('embedded-opentype'), url('../fonts/OpenSans/OpenSans-Regular.woff2') format('woff2'), url('../fonts/OpenSans/OpenSans-Regular.woff') format('woff'), url('../fonts/OpenSans/OpenSans-Regular.ttf') format('truetype');
+}
+
+@mixin OpenSans-Regular() {
+  font-family: OpenSans-Regular;
+  font-weight: normal;
+  font-style: normal;
+}

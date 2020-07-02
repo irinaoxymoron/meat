@@ -1,0 +1,205 @@
+// header
+
+.header {
+
+	&__content {
+		max-width: 1024px;
+		padding: 0 10px;
+		margin: 0 auto;
+		display: flex;
+    	justify-content: space-between;
+    	margin-top: 30px;
+	}
+
+	&__img {
+		margin-right: 30px;
+	}
+
+	&__logo {
+		width: 130px;
+	}
+
+	&__nav {
+		font-size: 16px;
+		line-height: 20px;
+		margin-top: 2px;
+		width: 57%;
+	}
+
+	&__contact {
+		margin-top: 0;
+	}
+
+	&__social {
+		display: none;
+	}
+
+	&__phone {
+		@include Merriweather-Bold();
+		font-size: 22px;
+		transition: .3s;
+
+		&:hover {
+			color: #ef864b;
+		}
+	}
+}
+
+.menu {
+
+	&__item {
+		display: inline-block;
+		margin-right: 16px;
+	}
+
+	&__link {
+		transition: .3s;
+
+		&:hover {
+			color: #ef864b;
+		}
+	}
+}
+
+
+.menu-trigger {
+	display: none;
+	position: absolute;
+    top: 40px;
+    right: 72px;
+    z-index: 999999;
+    width: 32px;
+    height: 32px;
+    font-size: 18px;
+    line-height: 23px;
+
+    & span {
+    	display: block;
+    	position: absolute;
+    	height: 3px;
+    	width: 100%;
+    	background: #000;
+    	border-radius: 9px;
+    	opacity: 1;
+    	left: 60px;
+    	transform: rotate(0deg);
+    	transition: .25s ease-in-out;
+	}
+
+	& span:nth-child(1) {
+    	top: 0px;
+	}
+
+	& span:nth-child(2), span:nth-child(3) {
+    	top: 10px;
+	}
+
+	span:nth-child(4) {
+    	top: 20px;
+	}
+}
+
+.menu_state_open {
+	color: #fff;
+
+	& span {
+		background: #fff;
+	}
+	
+	& span:nth-child(1) {
+		top: 18px;
+    	width: 0%;
+    	left: 50%;
+	}
+
+	& span:nth-child(2) {
+		transform: rotate(45deg);
+	}
+
+	& span:nth-child(3) {
+		transform: rotate(-45deg);
+	}
+
+	& span:nth-child(4) {
+		top: 18px;
+    	width: 0%;
+    	left: 50%;
+	}
+}
+
+// media for header
+
+@media only screen and (max-width : 1023px) {
+
+	.header {
+
+		&__img {
+			margin-right: 10px;
+		}
+
+		&__nav {
+			width: 0;
+		}
+
+		&__social {
+			display: flex;
+    		justify-content: flex-end;
+    		margin-top: 40px;
+
+    		&--link {
+    			margin-left: 10px;
+    		}
+
+			&--icon {
+				width: 28px;
+			}
+		}
+
+		&__link {
+			margin-top: 10px;
+		}
+
+		&__phone {
+			font-size: 18px;
+			@include Arsenal-Regular();
+			text-decoration: underline;
+		}
+		
+	}
+
+	.menu {
+
+		&__link {
+			color: #fff;
+			padding-bottom: 20px;
+
+			&:hover {
+				color: #ef864b;
+			}
+		}
+	}
+
+	.ul-trigger {
+		position: absolute;
+    	top: 0;
+    	left: 0;
+    	z-index: 8888;
+    	width: 100%;
+    	background: #47a5ae;
+    	height: 100vh;
+    	padding: 60px 20px;
+	}
+
+	ul.menu {
+		display: none;
+	}
+
+	.menu__item {
+		display: block;
+	}
+
+	.menu-trigger {
+		display: inline-block;
+	}
+
+}
